@@ -287,13 +287,18 @@ img {
   position: absolute;
   z-index: 100;
   top: calc(50% - 25px);
+  left: -25px;
   width: 50px;
   height: 50px;
   background: #ffffff;
   border: 1px solid #5b7d6e;
   transform: rotate(45deg);
+  transition: all 0.15s linear;
   cursor: pointer;
-  left: -25px;
+}
+
+.slider-arrow--left:hover {
+  background-color: #f9f9f9;
 }
 
 .slider-arrow--left::after {
@@ -313,13 +318,18 @@ img {
   position: absolute;
   z-index: 100;
   top: calc(50% - 25px);
+  right: -24px;
   width: 50px;
   height: 50px;
   background: #ffffff;
   border: 1px solid #5b7d6e;
   transform: rotate(45deg);
+  transition: all 0.15s linear;
   cursor: pointer;
-  right: -24px;
+}
+
+.slider-arrow--right:hover {
+  background-color: #f9f9f9;
 }
 
 .slider-arrow--right::after {
@@ -345,7 +355,12 @@ img {
   height: 50px;
   background: #ffffff;
   border: 1px solid #d7d7d7;
+  transition: all 0.15s linear;
   cursor: pointer;
+}
+
+.slider-arrow-catalog--left:hover {
+  background-color: #f9f9f9;
 }
 
 .slider-arrow-catalog--left::after {
@@ -369,7 +384,12 @@ img {
   height: 50px;
   background: #ffffff;
   border: 1px solid #d7d7d7;
+  transition: all 0.15s linear;
   cursor: pointer;
+}
+
+.slider-arrow-catalog--right:hover {
+  background-color: #f9f9f9;
 }
 
 .slider-arrow-catalog--right::after {
@@ -653,9 +673,17 @@ img {
   margin-top: 4px;
 }
 
+.header__social-vk:hover {
+  filter: invert(35%) sepia(6%) saturate(2050%) hue-rotate(101deg) brightness(99%) contrast(85%);
+}
+
 .header__social-insta {
   display: inline-block;
   width: 18px;
+}
+
+.header__social-insta:hover {
+  filter: invert(35%) sepia(6%) saturate(2050%) hue-rotate(101deg) brightness(99%) contrast(85%);
 }
 
 .header__tel {
@@ -1245,8 +1273,16 @@ img {
   top: 0;
 }
 
+.footer__social-vk svg:hover {
+  filter: invert(35%) sepia(6%) saturate(2050%) hue-rotate(101deg) brightness(99%) contrast(85%);
+}
+
 .footer__social-insta {
   margin-left: 20px;
+}
+
+.footer__social-insta svg:hover:hover {
+  filter: invert(35%) sepia(6%) saturate(2050%) hue-rotate(101deg) brightness(99%) contrast(85%);
 }
 
 .footer-menu__item {
