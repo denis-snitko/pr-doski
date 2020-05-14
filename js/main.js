@@ -163,7 +163,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hero_hero__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/hero/hero */ \"./src/modules/hero/hero.js\");\n/* harmony import */ var _modules_catalog_items_catalog_items__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/catalog-items/catalog-items */ \"./src/modules/catalog-items/catalog-items.js\");\n/* harmony import */ var _modules_menu_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/menu/menu */ \"./src/modules/menu/menu.js\");\n/* harmony import */ var _modules_menu_menu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_menu_menu__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _modules_gallery_gallery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/gallery/gallery */ \"./src/modules/gallery/gallery.js\");\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/import/modules.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_components_modal_window_modal_window__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/components/modal-window/modal-window */ \"./src/modules/components/modal-window/modal-window.js\");\n/* harmony import */ var _modules_components_modal_window_modal_window__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_components_modal_window_modal_window__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/header/header */ \"./src/modules/header/header.js\");\n/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _modules_hero_hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/hero/hero */ \"./src/modules/hero/hero.js\");\n/* harmony import */ var _modules_catalog_items_catalog_items__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/catalog-items/catalog-items */ \"./src/modules/catalog-items/catalog-items.js\");\n/* harmony import */ var _modules_menu_menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/menu/menu */ \"./src/modules/menu/menu.js\");\n/* harmony import */ var _modules_menu_menu__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_menu_menu__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _modules_gallery_gallery__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/gallery/gallery */ \"./src/modules/gallery/gallery.js\");\n/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/footer/footer */ \"./src/modules/footer/footer.js\");\n/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_6__);\n\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/import/modules.js?");
 
 /***/ }),
 
@@ -191,6 +191,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 
 /***/ }),
 
+/***/ "./src/modules/components/modal-window/modal-window.js":
+/*!*************************************************************!*\
+  !*** ./src/modules/components/modal-window/modal-window.js ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var modalWindowOverlay = document.querySelector('.modal-window-overlay');\nvar modalWindowClose = document.querySelector('.modal-window__close');\nmodalWindowClose.addEventListener('click', function () {\n  modalWindowOverlay.setAttribute('style', 'display: none');\n});\n\n//# sourceURL=webpack:///./src/modules/components/modal-window/modal-window.js?");
+
+/***/ }),
+
+/***/ "./src/modules/footer/footer.js":
+/*!**************************************!*\
+  !*** ./src/modules/footer/footer.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var footerButton = document.querySelector('.footer__button');\nvar modalWindowOverlay = document.querySelector('.modal-window-overlay');\nfooterButton.addEventListener('click', function () {\n  modalWindowOverlay.setAttribute('style', 'display: flex');\n});\n\n//# sourceURL=webpack:///./src/modules/footer/footer.js?");
+
+/***/ }),
+
 /***/ "./src/modules/gallery/gallery.js":
 /*!****************************************!*\
   !*** ./src/modules/gallery/gallery.js ***!
@@ -200,6 +222,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jque
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var glightbox__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! glightbox */ \"./node_modules/glightbox/dist/js/glightbox.min.js\");\n/* harmony import */ var glightbox__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(glightbox__WEBPACK_IMPORTED_MODULE_0__);\n\nvar lightbox = glightbox__WEBPACK_IMPORTED_MODULE_0___default()({\n  touchNavigation: true,\n  loop: true\n});\n\n//# sourceURL=webpack:///./src/modules/gallery/gallery.js?");
+
+/***/ }),
+
+/***/ "./src/modules/header/header.js":
+/*!**************************************!*\
+  !*** ./src/modules/header/header.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var headerButton = document.querySelector('.header__button');\nvar modalWindowOverlay = document.querySelector('.modal-window-overlay');\nheaderButton.addEventListener('click', function () {\n  modalWindowOverlay.setAttribute('style', 'display: flex');\n});\n\n//# sourceURL=webpack:///./src/modules/header/header.js?");
 
 /***/ }),
 
