@@ -1446,6 +1446,12 @@ img {
     min-width: 100%;
     margin: 0 auto;
   }
+
+  .footer__title,
+  .footer__text,
+  .footer__button {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1584,6 +1590,11 @@ img {
 
   .news .news-item {
     width: 290px;
+  }
+
+  .footer-menu__list {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
