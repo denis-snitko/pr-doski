@@ -965,9 +965,12 @@ img {
   text-transform: uppercase;
   border: 1px solid #d7d7d7;
   transition: all 0.15s linear;
+  outline: none;
 }
 
-.catalog-item:hover {
+.catalog-item:hover,
+.catalog-item:focus,
+.catalog-item:active {
   border: 1px solid #393939;
 }
 
@@ -979,14 +982,6 @@ img {
   font-weight: 400;
   letter-spacing: 2px;
   color: #393939;
-}
-
-.catalog-item__link {
-  color: inherit;
-}
-
-.catalog-item__link:hover {
-  color: #446657;
 }
 
 .about {
@@ -1127,13 +1122,17 @@ img {
 }
 
 .news-item {
+  display: block;
   width: 352px;
   margin-bottom: 40px;
   border: 1px solid #d7d7d7;
   transition: all 0.15s linear;
+  outline: none;
 }
 
-.news-item:hover {
+.news-item:hover,
+.news-item:focus,
+.news-item:active {
   border: 1px solid #393939;
 }
 
@@ -1149,14 +1148,6 @@ img {
   letter-spacing: 1px;
   word-wrap: break-word;
   color: #393939;
-}
-
-.news-item__link {
-  color: inherit;
-}
-
-.news-item__link:hover {
-  color: #446657;
 }
 
 .news-item__desc {
