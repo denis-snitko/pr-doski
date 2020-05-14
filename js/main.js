@@ -163,7 +163,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hero_hero__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/hero/hero */ \"./src/modules/hero/hero.js\");\n/* harmony import */ var _modules_catalog_items_catalog_items__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/catalog-items/catalog-items */ \"./src/modules/catalog-items/catalog-items.js\");\n/* harmony import */ var _modules_menu_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/menu/menu */ \"./src/modules/menu/menu.js\");\n/* harmony import */ var _modules_menu_menu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_menu_menu__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n//# sourceURL=webpack:///./src/js/import/modules.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_hero_hero__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/hero/hero */ \"./src/modules/hero/hero.js\");\n/* harmony import */ var _modules_catalog_items_catalog_items__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/catalog-items/catalog-items */ \"./src/modules/catalog-items/catalog-items.js\");\n/* harmony import */ var _modules_menu_menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/menu/menu */ \"./src/modules/menu/menu.js\");\n/* harmony import */ var _modules_menu_menu__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_menu_menu__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _modules_gallery_gallery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/gallery/gallery */ \"./src/modules/gallery/gallery.js\");\n\n\n\n\n\n//# sourceURL=webpack:///./src/js/import/modules.js?");
 
 /***/ }),
 
@@ -188,6 +188,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _imp
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ \"./node_modules/slick-carousel/slick/slick.js\");\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);\n\n\njquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider').slick({\n  prevArrow: '<span class=\"slider-arrow-catalog--left\"></span>',\n  nextArrow: '<span class=\"slider-arrow-catalog--right\"></span>',\n  infinite: true,\n  slidesToShow: 4,\n  slidesToScroll: 1,\n  autoplay: 0,\n  autoplaySpeed: 2000,\n  arrows: true,\n  pauseOnHover: true,\n  responsive: [{\n    breakpoint: 1200,\n    settings: {\n      slidesToShow: 3,\n      slidesToScroll: 1\n    }\n  }, {\n    breakpoint: 900,\n    settings: {\n      slidesToShow: 2,\n      slidesToScroll: 1\n    }\n  }, {\n    breakpoint: 610,\n    settings: {\n      slidesToShow: 1,\n      slidesToScroll: 1\n    }\n  }]\n});\n\n//# sourceURL=webpack:///./src/modules/catalog-items/catalog-items.js?");
+
+/***/ }),
+
+/***/ "./src/modules/gallery/gallery.js":
+/*!****************************************!*\
+  !*** ./src/modules/gallery/gallery.js ***!
+  \****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var glightbox__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! glightbox */ \"./node_modules/glightbox/dist/js/glightbox.min.js\");\n/* harmony import */ var glightbox__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(glightbox__WEBPACK_IMPORTED_MODULE_0__);\n\nvar lightbox = glightbox__WEBPACK_IMPORTED_MODULE_0___default()({\n  touchNavigation: true,\n  loop: true\n});\n\n//# sourceURL=webpack:///./src/modules/gallery/gallery.js?");
 
 /***/ }),
 
