@@ -1526,6 +1526,183 @@ img {
   overflow: hidden;
 }
 
+.base-button {
+  display: inline-block;
+  height: 50px;
+  padding: 0 23px;
+  font-size: 16px;
+  font-family: "Lora", serif;
+  color: #ffffff;
+  border: 1px solid #446657;
+  background-color: #446657;
+  cursor: pointer;
+  transition: all .15s linear;
+  outline: none;
+}
+
+.base-button:hover {
+  color: #446657;
+  background-color: #ffffff;
+}
+
+.modal-window-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(52, 40, 52, 0.66);
+}
+
+.modal-window {
+  max-width: 470px;
+  max-height: 470px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 60px;
+  color: #ffffff;
+  background-color: #5b7d6e;
+}
+
+.modal-window__close {
+  position: absolute;
+  display: block;
+  width: 14px;
+  height: 14px;
+  top: 32px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.modal-window__close::before,
+.modal-window__close::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.modal-window__close::before {
+  transform: rotate(45deg);
+}
+
+.modal-window__close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-window__title {
+  margin-bottom: 75px;
+  font-family: "Lora", serif;
+  font-size: 28px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.modal-window__row {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.modal-window__form label {
+  position: absolute;
+  top: -26px;
+  display: block;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  color: rgba(255, 255, 255, 0.75);
+  opacity: 0;
+}
+
+.modal-window__form input {
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 3px;
+  color: #ffffff;
+  outline: none;
+}
+
+.modal-window__form input::placeholder {
+  color: #ffffff;
+}
+
+.modal-window__form input:focus label {
+  opacity: 1;
+}
+
+.modal-window__button {
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 3px;
+  font-size: 18px;
+  color: #5b7d6e;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.modal-window__button:hover {
+  color: #ffffff;
+  background-color: #5b7d6e;
+}
+
+.card {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  width: 270px;
+  text-transform: uppercase;
+  border: 1px solid #d7d7d7;
+  transition: all 0.15s linear;
+}
+
+.card__img {
+  margin-bottom: 25px;
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.card__title {
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #393939;
+}
+
+.card__price {
+  margin-left: 30px;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #5b7d6e;
+}
+
+.card-star {
+  display: inline-block;
+  margin-left: 30px;
+  margin-bottom: 8px;
+}
+
+.card-star svg {
+  margin-right: 1px;
+}
+
+.card-star:last-child {
+  margin-right: 0;
+}
+
 .header {
   padding: 15px 0;
   font-family: "Montserrat", sans-serif;
@@ -2419,183 +2596,6 @@ img {
 .contacts {
   padding-top: 55px;
   padding-bottom: 90px;
-}
-
-.base-button {
-  display: inline-block;
-  height: 50px;
-  padding: 0 23px;
-  font-size: 16px;
-  font-family: "Lora", serif;
-  color: #ffffff;
-  border: 1px solid #446657;
-  background-color: #446657;
-  cursor: pointer;
-  transition: all .15s linear;
-  outline: none;
-}
-
-.base-button:hover {
-  color: #446657;
-  background-color: #ffffff;
-}
-
-.modal-window-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5000;
-  width: 100%;
-  height: 100vh;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(52, 40, 52, 0.66);
-}
-
-.modal-window {
-  max-width: 470px;
-  max-height: 470px;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  padding: 60px;
-  color: #ffffff;
-  background-color: #5b7d6e;
-}
-
-.modal-window__close {
-  position: absolute;
-  display: block;
-  width: 14px;
-  height: 14px;
-  top: 32px;
-  right: 24px;
-  cursor: pointer;
-}
-
-.modal-window__close::before,
-.modal-window__close::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 14px;
-  height: 1px;
-  background-color: #ffffff;
-}
-
-.modal-window__close::before {
-  transform: rotate(45deg);
-}
-
-.modal-window__close::after {
-  transform: rotate(-45deg);
-}
-
-.modal-window__title {
-  margin-bottom: 75px;
-  font-family: "Lora", serif;
-  font-size: 28px;
-  line-height: 30px;
-  letter-spacing: 3px;
-  font-weight: 400;
-}
-
-.modal-window__row {
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.modal-window__form label {
-  position: absolute;
-  top: -26px;
-  display: block;
-  font-size: 12px;
-  line-height: 30px;
-  letter-spacing: 1.5px;
-  color: rgba(255, 255, 255, 0.75);
-  opacity: 0;
-}
-
-.modal-window__form input {
-  width: 100%;
-  height: 36px;
-  border: none;
-  border-bottom: 1px solid #ffffff;
-  background-color: transparent;
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 3px;
-  color: #ffffff;
-  outline: none;
-}
-
-.modal-window__form input::placeholder {
-  color: #ffffff;
-}
-
-.modal-window__form input:focus label {
-  opacity: 1;
-}
-
-.modal-window__button {
-  display: block;
-  margin: 0 auto;
-  letter-spacing: 3px;
-  font-size: 18px;
-  color: #5b7d6e;
-  background-color: #ffffff;
-  border: 1px solid #ffffff;
-}
-
-.modal-window__button:hover {
-  color: #ffffff;
-  background-color: #5b7d6e;
-}
-
-.card {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
-  width: 270px;
-  text-transform: uppercase;
-  border: 1px solid #d7d7d7;
-  transition: all 0.15s linear;
-}
-
-.card__img {
-  margin-bottom: 25px;
-  width: 100%;
-  height: auto;
-  vertical-align: bottom;
-}
-
-.card__title {
-  margin-left: 30px;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 2px;
-  color: #393939;
-}
-
-.card__price {
-  margin-left: 30px;
-  padding-top: 10px;
-  font-family: "Montserrat", sans-serif;
-  color: #5b7d6e;
-}
-
-.card-star {
-  display: inline-block;
-  margin-left: 30px;
-  margin-bottom: 8px;
-}
-
-.card-star svg {
-  margin-right: 1px;
-}
-
-.card-star:last-child {
-  margin-right: 0;
 }
 
 @media (min-width: 769px) {
