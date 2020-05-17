@@ -1671,6 +1671,10 @@ img {
   transition: all 0.15s linear;
 }
 
+.card__inner {
+  margin-bottom: 30px;
+}
+
 .card__img {
   margin-bottom: 25px;
   width: 100%;
@@ -1705,6 +1709,40 @@ img {
 
 .card-star:last-child {
   margin-right: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__item {
+  margin: 0 6px;
+}
+
+.pagination__item:first-child {
+  margin-right: 12px;
+}
+
+.pagination__item:last-child {
+  margin-left: 12px;
+}
+
+.pagination__item:last-child:hover svg > path {
+  stroke: #393939;
+}
+
+.pagination__link {
+  color: #a6a6a6;
+  transition: all 0.15s linear;
+}
+
+.pagination__link:hover {
+  color: #393939;
+}
+
+.pagination__link--active {
+  color: #393939;
 }
 
 .header {
