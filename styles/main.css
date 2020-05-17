@@ -2596,12 +2596,6 @@ img {
   border-bottom: 1px solid #d7d7d7;
 }
 
-.page-news .news-item:hover,
-.page-news .news-item:focus,
-.page-news .news-item:active {
-  border: none;
-}
-
 .page-news .news-item__img {
   margin-bottom: 50px;
 }
