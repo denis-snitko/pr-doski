@@ -1348,6 +1348,10 @@ img {
 
 .bread-crumbs__list {
   display: flex;
+  font-size: 12px;
+  line-height: 23px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .bread-crumbs__item {
