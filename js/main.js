@@ -395,13 +395,21 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slick-slider').slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  asNavFor: '.slider-nav'
+  asNavFor: '.slider-nav',
+  responsive: [{
+    breakpoint: 992,
+    settings: {
+      dots: true
+    }
+  }]
 });
 $('.slider-nav').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.product-slider-for',
   focusOnSelect: true,
+  centerMode: true,
+  centerPadding: '0px',
   arrows: false
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
