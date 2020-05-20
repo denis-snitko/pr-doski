@@ -2435,7 +2435,8 @@ img {
 .product-card__colors .colors__inner {
   position: relative;
   display: inline-block;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  border: 2px solid transparent
 }
 .product-card__colors .colors__inner img {
   width: 100px;
@@ -2449,7 +2450,11 @@ img {
   font-family: Montserrat,sans-serif;
   font-size: 14px;
   line-height: 17px;
-  color: #fff
+  color: #fff;
+  cursor: pointer
+}
+.product-card__colors .colors__inner--active {
+  border: 2px solid #000
 }
 .product-card__button {
   width: 100%
