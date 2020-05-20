@@ -1607,7 +1607,6 @@ img {
   cursor: pointer
 }
 .tabs__title-item--active {
-  font-weight: 700;
   color: #446657;
   border-bottom: 1px solid #446657
 }
@@ -1616,13 +1615,11 @@ img {
   cursor: default
 }
 .tabs__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-left: -15px;
-  margin-right: -15px
+  margin-right: -15px;
+  display: none
 }
 .tabs__col-inner {
   -webkit-box-sizing: border-box;
@@ -1648,6 +1645,11 @@ img {
 }
 .tabs__col-inner:last-child {
   border-bottom: none
+}
+.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex
 }
 .counter__inner {
   display: inline-block;
